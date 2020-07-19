@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fa">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>عرفان هستم</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <script src="js/nprogress.js"></script>
+    </head>
+
+    <body>
+        <script>NProgress.start();</script>
+        <script src="js/particles.min.js"></script>
+
+        <header class="desktop-only">
+            <div id="main-bg">
+                <p>I'm Erfan Mola</p>
+            </div>
+            <div id="particles-js"></div>
+        </header>
+
+        <div class="holder">
+
+            <section id="profile">
+                <div>
+                    <img src="assets/images/profile.jpg" class="no-select" alt="Profile">
+                </div>
+            </section>
+
+            <ul class="separator-blocks">
+                <li></li>
+                <li></li>
+            </ul>
+
+            <section class="card" id="information-card">
+                <h2>معرفی من</h2>
+                <hr>
+                <p>
+                    عرفان مولا هستم، متولد و ساکن شهر تبریز ام و در حال حاضر ۱۸ سال دارم. توسعه دهنده فول‌استک (Fullstack) هستم و به صورت آزاد یا همون فریلنسینگ کار میکنم، یکی از اتفاقات جالب زندگیم اینه که تفریحم و شغلم یکی هستند و اونم چیزی نیست جز توسعه وب و اپلیکیشن. به دنیای متن باز(Open Source) علاقه زیادی دارم و همین باعث شده که به توزیع های سیستم عامل متن باز گنو/لینوکس گرایش پیدا کنم. از سال ۱۳۹۲ بصورت اکتسابی وارد دنیای توسعه وب و اپلیکیشن های اندرویدی شدم و سابقه کاریم در زمینه برنامه نویسی و طراحی وب به ۶ سال پیش برمیگرده، همچنین این سابقه با گذر زمان همچنان بیشتر و بیشتر میشه، چون برنامه نویسی چیزی هست که من باهاش دنیا رو می بینم، می سنجم و حس میکنم، و سعی ام همیشه بر این هست که با همین روند پیش برم و روز به روز با تکنولوژی های جدید وب و سایر پلتفرم ها و سیستم عامل های مختلف، کار کنم و تجربیات جدیدی کسب کنم.
+                </p>
+            </section>
+
+            <ul class="separator-blocks">
+                <li></li>
+                <li></li>
+            </ul>
+
+            <ul class="card" id="skills">
+                <h2>تخصص‌ها</h2>
+                <hr>
+
+                <li>توسعه‌دهنده وب</li>
+                <li>برنامه‌نویس اندروید</li>
+                <li>مدیر شبکه</li>
+                <li>استراتژیست استارتاپ</li>
+                <li>سئوکار محتوا</li>
+                <li>پیش‌بر سیستم IoT</li>
+                <li>برنامه‌نویس ربات</li>
+                <li>برنامه‌نویس میکروکنترلر</li>
+                <li>تامین امنیت وبسایت</li>
+            </ul>
+
+            <ul class="separator-blocks">
+                <li></li>
+                <li></li>
+            </ul>
+
+            <ul id="portfolios">
+                <li>
+                    <a href="#">
+                        <div>
+                            <img src="assets/images/bg.jpg">
+                        </div>
+
+                        <div>
+                            <h3>نمونه‌کار اول</h3>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <div>
+                            <img src="assets/images/bg.jpg">
+                        </div>
+
+                        <div>
+                            <h3>نمونه‌کار دوم</h3>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <div>
+                            <img src="assets/images/bg.jpg">
+                        </div>
+
+                        <div>
+                            <h3>نمونه‌کار سوم</h3>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="separator-blocks">
+                <li></li>
+                <li></li>
+            </ul>
+
+            <section class="card" id="form">
+                <h2>فرم ثبت سفارش</h2>
+                <hr>
+                <input type="text" id="txt-name" placeholder="نام و نام‌خانوادگی" class="half">
+                <input type="text" id="txt-phone" placeholder="شماره همراه" class="half">
+                <input type="text" id="txt-title" placeholder="عنوان پروژه" class="full">
+                <textarea id="txt-information" placeholder="توضیحات پروژه" class="full"></textarea>
+                <button id="btn-submit">ثبت سفارش</button>
+            </section>
+
+            <p id="copyright">تمامی حقوق مادی و معنوی این وبسایت محفوظ می‌باشد</p>
+
+        </div>
+
+        <script>
+            particlesJS.load('particles-js', 'assets/particles.json', function() {});
+
+            function $(selector) {
+                return document.querySelector(selector);
+            }
+
+            $('#btn-submit').addEventListener('click', function () {
+
+                if (($('#txt-name').value === '') || ($('#txt-phone').value === '') || ($('#txt-title').value === '') || ($('#txt-information').value === '')) {
+
+                    alert('لطفا تمامی فیلد های فرم را پر کنید');
+
+                }else{
+
+                    var data = "action=order&title=" + $('#txt-title').value + "&phone=" + $('#txt-phone').value + "&name=" + $('#txt-name').value + "&text=" + $('#txt-information').value;
+
+                    var request = new XMLHttpRequest();
+                    request.open('POST', 'api.php', true);
+                    request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+                    request.onload = function() {
+                        if (request.status === 200 && request.responseText === 'success') {
+                            alert('سفارش شما ثبت شد، به‌زودی باهاتون تماس میگیریم');
+                        }else{
+                            alert('متاسفانه خطایی در ثبت سفارش شما رخ داد');
+                        }
+                    };
+                    request.send(data);
+
+                }
+
+            });
+        </script>
+
+        <script>NProgress.done();</script>
+    </body>
+</html>

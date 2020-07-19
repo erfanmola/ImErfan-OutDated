@@ -1,0 +1,124 @@
+@media only screen and (min-width: 1025px) {
+  .desktop-only {
+    display: block !important;
+  }
+
+  .mobile-only {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  body {
+    background-color: #00BCD4;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='84' height='48' viewBox='0 0 84 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h12v6H0V0zm28 8h12v6H28V8zm14-8h12v6H42V0zm14 0h12v6H56V0zm0 8h12v6H56V8zM42 8h12v6H42V8zm0 16h12v6H42v-6zm14-8h12v6H56v-6zm14 0h12v6H70v-6zm0-16h12v6H70V0zM28 32h12v6H28v-6zM14 16h12v6H14v-6zM0 24h12v6H0v-6zm0 8h12v6H0v-6zm14 0h12v6H14v-6zm14 8h12v6H28v-6zm-14 0h12v6H14v-6zm28 0h12v6H42v-6zm14-8h12v6H56v-6zm0-8h12v6H56v-6zm14 8h12v6H70v-6zm0 8h12v6H70v-6zM14 24h12v6H14v-6zm14-8h12v6H28v-6zM14 8h12v6H14V8zM0 8h12v6H0V8z' fill='%23fefeff' fill-opacity='.08' fill-rule='evenodd'/%3E%3C/svg%3E");
+  }
+
+  .holder {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .desktop-only {
+    display: none !important;
+  }
+
+  .mobile-only {
+    display: block !important;
+  }
+
+  #profile {
+    width: calc(36% - 20px) !important;
+    margin: 92px 32% !important;
+  }
+
+  .separator-blocks li {
+    width: 46px !important;
+    height: 46px !important;
+    margin: 14px calc(50% - 23px) !important;
+  }
+
+  #information-card, #skills, #form {
+    width: calc(90% - 32px) !important;
+    margin: 12px 5% !important;
+    padding: 16px !important;
+  }
+  #information-card *, #skills *, #form * {
+    font-size: 15px !important;
+  }
+
+  #portfolios {
+    width: 90% !important;
+    margin: 12px 5% !important;
+  }
+  #portfolios li {
+    width: 44% !important;
+    padding: 12px 3% !important;
+  }
+  #portfolios li h3 {
+    font-size: 15px !important;
+  }
+
+  #copyright {
+    color: white !important;
+    font-size: 15px !important;
+  }
+
+  #skills li {
+    margin: 8px !important;
+    padding: 6px 10px !important;
+    font-size: 14px !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #profile {
+    width: calc(60% - 20px) !important;
+    margin: 64px 20% 52px !important;
+  }
+
+  .separator-blocks li {
+    width: 40px !important;
+    height: 40px !important;
+    margin: 10px calc(50% - 20px) !important;
+  }
+
+  #information-card, #skills, #form {
+    width: calc(94% - 32px) !important;
+    margin: 12px 3% !important;
+    padding: 16px !important;
+  }
+  #information-card *, #skills *, #form * {
+    font-size: 14px !important;
+  }
+
+  #portfolios {
+    width: 94% !important;
+    margin: 12px 4% !important;
+  }
+  #portfolios li {
+    width: 94% !important;
+    padding: 6px 3% !important;
+  }
+  #portfolios li h3 {
+    font-size: 14px !important;
+  }
+
+  #form .half, #form .half {
+    width: calc(94% - 20px) !important;
+    padding: 10px !important;
+    margin: 6px 3% !important;
+  }
+
+  #copyright {
+    font-size: 13px !important;
+  }
+
+  #skills li {
+    width: calc(50% - 16px);
+    margin: 6px !important;
+    padding: 5px 2px !important;
+    font-size: 12px !important;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */
