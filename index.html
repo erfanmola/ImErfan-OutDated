@@ -119,7 +119,7 @@
                     var data = "action=message&email=" + $('#txt-email').value + "&phone=" + $('#txt-phone').value + "&name=" + $('#txt-name').value + "&text=" + $('#txt-information').value;
 
                     var request = new XMLHttpRequest();
-                    request.open('POST', 'api.php', true);
+                    request.open('POST', 'https://sibido.ir/ImErfan/api.php', true);
                     request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
                     request.onload = function() {
                         if (request.status === 200 && request.responseText === 'success') {
