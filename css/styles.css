@@ -1,22 +1,22 @@
 @font-face {
-  font-family: "Shabnam";
+  font-family: "SanFrancisco";
   font-weight: normal;
-  src: url("../assets/fonts/Shabnam/Shabnam.woff2");
+  src: url("../assets/fonts/SanFrancisco/sanfranciscodisplay-regular-webfont.woff") format("woff");
 }
 * {
   margin: 0;
   padding: 0;
+  font-family: "SanFrancisco", serif;
 }
 
 body {
-  font-family: "Shabnam", serif;
-  direction: rtl;
+  direction: ltr;
   overflow-x: hidden;
   background: #f0f0f0;
 }
 
 .holder {
-  float: right;
+  float: left;
   width: 1024px;
   margin: auto calc(50vw - 512px);
   padding: 0;
@@ -80,7 +80,7 @@ label {
 }
 
 #nprogress .bar {
-  background: #1976D2;
+  background: #FF5722;
   position: fixed;
   z-index: 1031;
   top: 0;
@@ -95,7 +95,7 @@ label {
   right: 0;
   width: 100px;
   height: 100%;
-  box-shadow: 0 0 10px #1976D2, 0 0 5px #1976D2;
+  box-shadow: 0 0 10px #FF5722, 0 0 5px #FF5722;
   opacity: 1;
   -webkit-transform: rotate(3deg) translate(0px, -4px);
   -ms-transform: rotate(3deg) translate(0px, -4px);
@@ -115,8 +115,8 @@ label {
   height: 18px;
   box-sizing: border-box;
   border: solid 2px transparent;
-  border-top-color: #1976D2;
-  border-left-color: #1976D2;
+  border-top-color: #FF5722;
+  border-left-color: #FF5722;
   border-radius: 50%;
   -webkit-animation: nprogress-spinner 400ms linear infinite;
   animation: nprogress-spinner 400ms linear infinite;
@@ -266,49 +266,6 @@ header #particles-js {
   background: rgba(0, 0, 0, 0.1);
 }
 
-#portfolios {
-  float: left;
-  width: 80%;
-  margin: 12px 10%;
-  overflow: hidden;
-  padding: 0;
-}
-#portfolios li {
-  float: right;
-  width: 30%;
-  margin: 0;
-  padding: 0 1.66%;
-  overflow: hidden;
-  transition: all 0.15s;
-}
-#portfolios li:hover {
-  opacity: 0.7;
-}
-#portfolios li div {
-  float: left;
-  width: calc(100% - 12px);
-  padding: 6px;
-  border-radius: 5px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-  background: whitesmoke;
-  margin: 8px 0;
-  overflow: hidden;
-}
-#portfolios li div img {
-  float: left;
-  width: 100%;
-  border-radius: 5px;
-}
-#portfolios li div h3 {
-  float: left;
-  width: 100%;
-  padding: 8px 0;
-  margin: 0;
-  font-size: 16px;
-  color: #454545;
-  text-align: center;
-}
-
 #form {
   float: left;
   width: calc(80% - 48px);
@@ -316,12 +273,12 @@ header #particles-js {
   padding: 24px;
 }
 #form .half {
-  float: right;
+  float: left;
   width: calc(44% - 24px);
   margin: 12px 3%;
 }
 #form .full {
-  float: right;
+  float: left;
   width: calc(94% - 24px);
   margin: 12px 3%;
 }
@@ -340,18 +297,18 @@ header #particles-js {
   border-color: rgba(0, 0, 0, 0.25);
 }
 #form input:focus, #form textarea:focus {
-  border-color: #D32F2F;
+  border-color: #FF5722;
 }
 #form textarea {
-  text-align: right;
+  text-align: left;
   resize: vertical;
   min-height: 128px;
 }
 #form button {
-  float: right;
+  float: left;
   width: calc(94% - 4px);
   margin: 16px 3%;
-  background: #D32F2F;
+  background: #FF5722;
   color: white;
   border: 2px solid white;
   border-radius: 5px;
@@ -366,40 +323,240 @@ header #particles-js {
 }
 #form button:hover {
   opacity: 0.75;
-  color: #D32F2F;
-  border-color: #D32F2F;
+  color: #FF5722;
+  border-color: #FF5722;
   background: white;
 }
 
-#skills {
-  float: left;
-  width: calc(80% - 48px);
-  margin: 12px 10%;
-  padding: 24px;
-}
-#skills li {
-  float: right;
-  width: auto;
-  background: rgba(0, 0, 0, 0.1);
-  color: rgba(0, 0, 0, 0.7);
-  border-radius: 5px;
-  margin: 12px;
-  padding: 8px 12px;
-  font-size: 15px;
-  transition: 0.15s;
-}
-#skills li:hover {
-  background: rgba(0, 0, 0, 0.2);
-}
-
 #copyright {
-  float: right;
+  float: left;
   width: 100%;
   padding: 0;
   margin: 32px 0;
   text-align: center;
   color: #353535;
   font-size: 16px;
+}
+#copyright a {
+  color: #FF5722 !important;
+  transition: opacity 0.15s;
+}
+#copyright a:hover {
+  opacity: 0.7;
+}
+
+#links {
+  float: left;
+  width: 80%;
+  margin: 12px 10%;
+  padding: 0 !important;
+}
+#links li {
+  float: left;
+  width: 16%;
+  height: calc(1024px / 100 * 80 / 100 * 16);
+  background: red;
+  border: 2px solid white;
+  margin: 32px calc(4.5% - 2px);
+  border-radius: 25px;
+  transform: rotate(45deg);
+  overflow: hidden;
+  transition: 0.15s all;
+  padding: 0 !important;
+}
+#links li:hover {
+  background: #f0f0f0 !important;
+}
+#links li a {
+  float: left;
+  width: 100%;
+  height: 100%;
+  line-height: calc(1024px / 100 * 80 / 100 * 16);
+  text-align: center;
+  transform: rotate(-45deg);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+#links li:nth-of-type(1) {
+  background: #D32F2F;
+}
+#links li:nth-of-type(1):hover, #links li:nth-of-type(1):focus {
+  border-color: #D32F2F !important;
+}
+#links li:nth-of-type(1):hover a, #links li:nth-of-type(1):focus a {
+  color: #D32F2F;
+}
+#links li:nth-of-type(2) {
+  background: #C2185B;
+}
+#links li:nth-of-type(2):hover, #links li:nth-of-type(2):focus {
+  border-color: #C2185B !important;
+}
+#links li:nth-of-type(2):hover a, #links li:nth-of-type(2):focus a {
+  color: #C2185B;
+}
+#links li:nth-of-type(3) {
+  background: #7B1FA2;
+}
+#links li:nth-of-type(3):hover, #links li:nth-of-type(3):focus {
+  border-color: #7B1FA2 !important;
+}
+#links li:nth-of-type(3):hover a, #links li:nth-of-type(3):focus a {
+  color: #7B1FA2;
+}
+#links li:nth-of-type(4) {
+  background: #512DA8;
+}
+#links li:nth-of-type(4):hover, #links li:nth-of-type(4):focus {
+  border-color: #512DA8 !important;
+}
+#links li:nth-of-type(4):hover a, #links li:nth-of-type(4):focus a {
+  color: #512DA8;
+}
+#links li:nth-of-type(5) {
+  background: #FFA000;
+}
+#links li:nth-of-type(5):hover, #links li:nth-of-type(5):focus {
+  border-color: #FFA000 !important;
+}
+#links li:nth-of-type(5):hover a, #links li:nth-of-type(5):focus a {
+  color: #FFA000;
+}
+#links li:nth-of-type(6) {
+  background: #AFB42B;
+}
+#links li:nth-of-type(6):hover, #links li:nth-of-type(6):focus {
+  border-color: #AFB42B !important;
+}
+#links li:nth-of-type(6):hover a, #links li:nth-of-type(6):focus a {
+  color: #AFB42B;
+}
+#links li:nth-of-type(7) {
+  background: #388E3C;
+}
+#links li:nth-of-type(7):hover, #links li:nth-of-type(7):focus {
+  border-color: #388E3C !important;
+}
+#links li:nth-of-type(7):hover a, #links li:nth-of-type(7):focus a {
+  color: #388E3C;
+}
+#links li:nth-of-type(8) {
+  background: #455A64;
+}
+#links li:nth-of-type(8):hover, #links li:nth-of-type(8):focus {
+  border-color: #455A64 !important;
+}
+#links li:nth-of-type(8):hover a, #links li:nth-of-type(8):focus a {
+  color: #455A64;
+}
+#links li:nth-of-type(9) {
+  background: #F57C00;
+}
+#links li:nth-of-type(9):hover, #links li:nth-of-type(9):focus {
+  border-color: #F57C00 !important;
+}
+#links li:nth-of-type(9):hover a, #links li:nth-of-type(9):focus a {
+  color: #F57C00;
+}
+#links li:nth-of-type(10) {
+  background: #5D4037;
+}
+#links li:nth-of-type(10):hover, #links li:nth-of-type(10):focus {
+  border-color: #5D4037 !important;
+}
+#links li:nth-of-type(10):hover a, #links li:nth-of-type(10):focus a {
+  color: #5D4037;
+}
+#links li:nth-of-type(11) {
+  background: #689F38;
+}
+#links li:nth-of-type(11):hover, #links li:nth-of-type(11):focus {
+  border-color: #689F38 !important;
+}
+#links li:nth-of-type(11):hover a, #links li:nth-of-type(11):focus a {
+  color: #689F38;
+}
+#links li:nth-of-type(12) {
+  background: #616161;
+}
+#links li:nth-of-type(12):hover, #links li:nth-of-type(12):focus {
+  border-color: #616161 !important;
+}
+#links li:nth-of-type(12):hover a, #links li:nth-of-type(12):focus a {
+  color: #616161;
+}
+#links li:nth-of-type(13) {
+  background: #E64A19;
+}
+#links li:nth-of-type(13):hover, #links li:nth-of-type(13):focus {
+  border-color: #E64A19 !important;
+}
+#links li:nth-of-type(13):hover a, #links li:nth-of-type(13):focus a {
+  color: #E64A19;
+}
+#links li:nth-of-type(14) {
+  background: #FBC02D;
+}
+#links li:nth-of-type(14):hover, #links li:nth-of-type(14):focus {
+  border-color: #FBC02D !important;
+}
+#links li:nth-of-type(14):hover a, #links li:nth-of-type(14):focus a {
+  color: #FBC02D;
+}
+#links li:nth-of-type(15) {
+  background: #E91E63;
+}
+#links li:nth-of-type(15):hover, #links li:nth-of-type(15):focus {
+  border-color: #E91E63 !important;
+}
+#links li:nth-of-type(15):hover a, #links li:nth-of-type(15):focus a {
+  color: #E91E63;
+}
+#links li:nth-of-type(16) {
+  background: #303F9F;
+}
+#links li:nth-of-type(16):hover, #links li:nth-of-type(16):focus {
+  border-color: #303F9F !important;
+}
+#links li:nth-of-type(16):hover a, #links li:nth-of-type(16):focus a {
+  color: #303F9F;
+}
+#links li:nth-of-type(17) {
+  background: #1976D2;
+}
+#links li:nth-of-type(17):hover, #links li:nth-of-type(17):focus {
+  border-color: #1976D2 !important;
+}
+#links li:nth-of-type(17):hover a, #links li:nth-of-type(17):focus a {
+  color: #1976D2;
+}
+#links li:nth-of-type(18) {
+  background: #0288D1;
+}
+#links li:nth-of-type(18):hover, #links li:nth-of-type(18):focus {
+  border-color: #0288D1 !important;
+}
+#links li:nth-of-type(18):hover a, #links li:nth-of-type(18):focus a {
+  color: #0288D1;
+}
+#links li:nth-of-type(19) {
+  background: #0097A7;
+}
+#links li:nth-of-type(19):hover, #links li:nth-of-type(19):focus {
+  border-color: #0097A7 !important;
+}
+#links li:nth-of-type(19):hover a, #links li:nth-of-type(19):focus a {
+  color: #0097A7;
+}
+#links li:nth-of-type(20) {
+  background: #00796B;
+}
+#links li:nth-of-type(20):hover, #links li:nth-of-type(20):focus {
+  border-color: #00796B !important;
+}
+#links li:nth-of-type(20):hover a, #links li:nth-of-type(20):focus a {
+  color: #00796B;
 }
 
 /*# sourceMappingURL=styles.css.map */
