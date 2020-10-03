@@ -60,17 +60,11 @@
   }
 
   #links {
-    width: 90% !important;
-    margin: 12px 5% !important;
-
-    li {
-      width: 16%;
-      height: calc(90vw / 100 * 16);
-      margin: 32px calc(4.5% - 2px);
-
-      a {
-        line-height: calc(90vw / 100 * 16);
-        font-size: 16px;
+    ul {
+      li {
+          a {
+            font-size: 15px !important;
+          }
       }
     }
 
@@ -79,6 +73,31 @@
 }
 
 @media only screen and (max-width: 600px) {
+
+  #links {
+    width: 96% !important;
+    margin: 16px 2% !important;
+
+    #address-bar {
+      width: calc(96%) !important;
+      margin-top: 32px !important;
+      margin-bottom: 6px !important;
+      padding: 10px 0 !important;
+      text-align: center;
+      font-size: 17px !important;
+    }
+
+    ul {
+      li {
+          width: calc(90% - 2px) !important;
+          margin: 12px 5% !important;
+          a {
+            padding: 12px 0 !important;
+          }
+      }
+    }
+
+  }
 
   #profile {
     width: calc(60% - 20px) !important;
@@ -104,7 +123,10 @@
   }
 
   #form {
-
+    width: calc(94% - 48px);
+    margin: 12px 3%;
+    padding: 24px;
+    
     .half, .half {
       width: calc(94% - 20px) !important;
       padding: 10px !important;
@@ -115,24 +137,6 @@
 
   #copyright {
     font-size: 13px !important;
-  }
-
-  #links {
-    width: 100% !important;
-    margin: 12px 0 !important;
-    padding: 0 !important;
-
-    li {
-      width: 40% !important;
-      height: calc(40vw) !important;
-      margin: 32px calc(30% - 2px) !important;
-
-      a {
-        line-height: calc(40vw) !important;
-        font-size: 16px !important;
-      }
-    }
-
   }
 
 }
