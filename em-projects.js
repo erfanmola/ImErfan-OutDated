@@ -4,6 +4,10 @@ let em_projects = [
         url: "https://ronio.ir"
     },
     {
+        title: "جی‌کوئری لازم نیست !",
+        url: "https://nojquery.ir"
+    },
+    {
         title: "نپرس که بپرسم، فقط بپرس !",
         url: "https://dontasktoask.ir"
     },
@@ -12,8 +16,8 @@ let em_projects = [
         url: "https://dontasktoask.ir/xyproblem.html"
     },
     {
-        title: "جی‌کوئری لازم نیست !",
-        url: "https://nojquery.ir"
+        title: "پی‌وی جای سوال نیست !",
+        url: "https://dontasktoask.ir/xyproblem.html"
     },
     {
         title: "بهترین سایت دنیا",
