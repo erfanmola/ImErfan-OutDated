@@ -19,6 +19,10 @@ let em_projects = [
         title: "مسئله فلان و بهمان",
         url: "https://dontasktoask.ir/xyproblem.html"
     },
+        {
+        title: "اطلاعات کامل بده !",
+        url: "https://dontasktoask.ir/info.html"
+    },
     {
         title: "پی‌وی جای سوال نیست !",
         url: "https://dontasktoask.ir/nopv.html"
