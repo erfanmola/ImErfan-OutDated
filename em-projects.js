@@ -4,6 +4,10 @@ let em_projects = [
         url: "https://ronio.ir"
     },
     {
+        title: "اسموشر",
+        url: "https://smusher.ir"
+    },
+    {
         title: "جی‌کوئری لازم نیست !",
         url: "https://nojquery.ir"
     },
