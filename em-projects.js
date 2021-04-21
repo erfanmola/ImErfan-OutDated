@@ -68,3 +68,54 @@ em_projects.forEach((value, index, array) => {
     em_a.target = "_blank";
     em_a.innerText = value['title'];
 });
+
+console.log("                                                                                \n" +
+"%c                 /@@@@@@@@@@@@@@@@@@@@@   %c@@@@@@@@@@@@@@@@@@@@@(                \n" + 
+"%c               @@@@@@@@@@@@@@@@@@@@@@@@   %c@@@@@@@@@@@@@@@@@@@@@@@@              \n" + 
+"%c            .@@@@@@@@@@@@@@@@@@@@@@@@@@   %c@@@@@@@@@@@@@@@@@@@@@@@@@@.           \n" + 
+"%c          @@@@@@@@@,                      %c@@@@@@      @@@@@@ @@@@@@@@@@         \n" + 
+"%c        @@@@@@@@@                         %c@@@@@@      @@@@@@    @@@@@@@@@       \n" + 
+"%c     @@@@@@@@@&                           %c@@@@@@      @@@@@@      @@@@@@@@@@    \n" + 
+"%c   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   %c@@@@@@      @@@@@@         @@@@@@@@@  \n" + 
+"%c @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   %c@@@@@@      @@@@@@           @@@@@@@@@\n" + 
+"%c   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   %c@@@@@@      @@@@@@        @@@@@@@@@@  \n" + 
+"%c      @@@@@@@@@                           %c@@@@@@      @@@@@@      @@@@@@@@@     \n" + 
+"%c        @@@@@@@@@@                        %c@@@@@@      @@@@@@      @@@@@@@       \n" + 
+"%c           @@@@@@@@@                      %c@@@@@@      @@@@@@      @@@@          \n" + 
+"%c             @@@@@@@@@@                   %c@@@@@@      @@@@@@      @@            \n" + 
+"%c                @@@@@@@@@                 %c@@@@@@      @@@@@@                    \n" + 
+"%c                  @@@@@@@@@@              %c@@@@@@      @@@@@@                    \n" + 
+"%c                    @@@@@@@@@             %c@@@@@@     .@@@@@@                    \n" + 
+"%c                       @@@@@@@@@@         %c@@@@@@     .@@@@                      \n" + 
+"%c                          @@@@@@@@@       %c@@@@@@     .@                         \n" + 
+"%c                            @@@@@@@@@@    %c@@@@@@                                \n" + 
+"%c                               @@@@@@@@   %c@@@@@@                                \n" + 
+"%c                                 @@@@@@   %c@@@@@@                                \n" + 
+"%c                                    @@@   %c@@@                                   \n" + 
+"%c                                      @   %c@                                     \n" +
+"%c                                                                                \n" +
+"%c                              https://ErfanMola.ir (:                           \n",
+"color: #D32F2F;font-weight: bold;", "color: #3949AB;font-weight: bold;",
+"color: #D32F2F;font-weight: bold;", "color: #3949AB;font-weight: bold;",
+"color: #D32F2F;font-weight: bold;", "color: #3949AB;font-weight: bold;",
+"color: #D32F2F;font-weight: bold;", "color: #3949AB;font-weight: bold;",
+"color: #D32F2F;font-weight: bold;", "color: #3949AB;font-weight: bold;",
+"color: #D32F2F;font-weight: bold;", "color: #3949AB;font-weight: bold;",
+"color: #D32F2F;font-weight: bold;", "color: #3949AB;font-weight: bold;",
+"color: #D32F2F;font-weight: bold;", "color: #3949AB;font-weight: bold;",
+"color: #D32F2F;font-weight: bold;", "color: #3949AB;font-weight: bold;",
+"color: #D32F2F;font-weight: bold;", "color: #3949AB;font-weight: bold;",
+"color: #D32F2F;font-weight: bold;", "color: #3949AB;font-weight: bold;",
+"color: #D32F2F;font-weight: bold;", "color: #3949AB;font-weight: bold;",
+"color: #D32F2F;font-weight: bold;", "color: #3949AB;font-weight: bold;",
+"color: #D32F2F;font-weight: bold;", "color: #3949AB;font-weight: bold;",
+"color: #D32F2F;font-weight: bold;", "color: #3949AB;font-weight: bold;",
+"color: #D32F2F;font-weight: bold;", "color: #3949AB;font-weight: bold;",
+"color: #D32F2F;font-weight: bold;", "color: #3949AB;font-weight: bold;",
+"color: #D32F2F;font-weight: bold;", "color: #3949AB;font-weight: bold;",
+"color: #D32F2F;font-weight: bold;", "color: #3949AB;font-weight: bold;",
+"color: #D32F2F;font-weight: bold;", "color: #3949AB;font-weight: bold;",
+"color: #D32F2F;font-weight: bold;", "color: #3949AB;font-weight: bold;",
+"color: #D32F2F;font-weight: bold;", "color: #3949AB;font-weight: bold;",
+"color: #D32F2F;font-weight: bold;", "color: #3949AB;font-weight: bold;",
+"color: #D32F2F;font-weight: bold;", "color: #D32F2F;font-weight: bold;");
