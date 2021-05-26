@@ -8,6 +8,10 @@ let em_projects = [
         url: "https://smusher.ir"
     },
     {
+        title: "فایلیتو",
+        url: "https://filito.ir"
+    },
+    {
         title: "جی‌کوئری لازم نیست !",
         url: "https://nojquery.ir"
     },
