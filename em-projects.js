@@ -27,6 +27,10 @@ let em_projects = [
         title: "بهترین سایت دنیا",
         url: "https://theperfectsite.ir"
     },
+        {
+        title: "مجموعه دولوپیکس",
+        url: "https://developix.ir"
+    },
 ];
 
 let em_projects_container = document.querySelector("#em-projects");
