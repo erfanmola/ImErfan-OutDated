@@ -69,7 +69,7 @@ em_projects.forEach((value, index, array) => {
     em_li.style.width = "100%";
     em_li.style.padding = "6px 0";
     em_li.style.margin = "0";
-    em_a.href = value['url'];
+    em_a.href = value['url'] + '/?utm_source=' + window.location.hostname + '&utm_medium=banner&utm_campaign=emprojects';
     em_a.style.fontSize = "16px";
     em_a.style.padding = "0";
     em_a.style.margin = "0";
