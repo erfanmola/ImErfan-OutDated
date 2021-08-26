@@ -122,7 +122,9 @@
             }
 
             $('#btn-submit').addEventListener('click', function () {
-
+                
+                this.disabled = true;
+                
                 if (($('#txt-name').value === '') || ($('#txt-phone').value === '') || ($('#txt-email').value === '') || ($('#txt-information').value === '')) {
 
                     alert('Please fill out the form ...');
@@ -136,14 +138,20 @@
                     request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
                     request.onload = function() {
                         if (request.status === 200 && request.responseText === 'success') {
+                            document.getElementById('txt-name').value = '';
+                            document.getElementById('txt-phone').value = '';
+                            document.getElementById('txt-email').value = '';
+                            document.getElementById('txt-information').value = '';
                             alert('Your message has been sent (:');
                         }else{
-                            alert('Sorry, there was problem with sending your message, try emailing : me@erfanmola.ir, also notify me about this problem, tnx');
+                            alert('Sorry, there was problem with sending your message, try emailing : hi@erfanxd.ir, also notify me about this problem, tnx');
                         }
                     };
                     request.send(data);
 
                 }
+                
+                this.disabled = false;
 
             });
         </script>
