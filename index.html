@@ -61,7 +61,7 @@
                 <h2>Introduction</h2>
                 <hr>
                 <p>
-                    My name is Erfan Mola, Im 20 years old from Tabriz/Iran. A Fullstack Developer who works as a freelancer, also a curios tech-lover who always wants to try new devices, gadgets, etc. I love open-source community and therefore enjoy using GNU/Linux. I also do enjoy web development and look forward to the new web-related technologies, though it's not my main occupation.
+                    My name is Erfan Mola, Im 20 years old from Tabriz/Iran. A Fullstack Dev-Ops who works as a freelancer, also a curios tech-lover who always wants to try new devices, gadgets, etc. I love open-source community and therefore enjoy using GNU/Linux. I also do enjoy web development and look forward to the new web-related technologies, though it's not my main occupation.
                 </p>
             </section>
 
@@ -103,8 +103,7 @@
             <section class="card" id="form">
                 <h2>Contact Me</h2>
                 <hr>
-                <input type="text" id="txt-name" placeholder="Full Name" class="full">
-                <input type="text" id="txt-phone" placeholder="Phone" class="half">
+                <input type="text" id="txt-name" placeholder="Full Name" class="half">
                 <input type="text" id="txt-email" placeholder="Email" class="half">
                 <textarea id="txt-information" placeholder="Bibbidi Bobbidi Boo ..." class="full"></textarea>
                 <button id="btn-submit">Send Message</button>
@@ -125,13 +124,13 @@
                 
                 this.disabled = true;
                 
-                if (($('#txt-name').value === '') || ($('#txt-phone').value === '') || ($('#txt-email').value === '') || ($('#txt-information').value === '')) {
+                if (($('#txt-name').value === '') || ($('#txt-email').value === '') || ($('#txt-information').value === '')) {
 
                     alert('Please fill out the form ...');
 
                 }else{
 
-                    var data = "action=message&email=" + $('#txt-email').value + "&phone=" + $('#txt-phone').value + "&name=" + $('#txt-name').value + "&text=" + $('#txt-information').value;
+                    var data = "action=message&email=" + $('#txt-email').value + "&name=" + $('#txt-name').value + "&text=" + $('#txt-information').value;
 
                     var request = new XMLHttpRequest();
                     request.open('POST', 'https://sibido.ir/ImErfan/api.php', true);
@@ -139,7 +138,6 @@
                     request.onload = function() {
                         if (request.status === 200 && request.responseText === 'success') {
                             document.getElementById('txt-name').value = '';
-                            document.getElementById('txt-phone').value = '';
                             document.getElementById('txt-email').value = '';
                             document.getElementById('txt-information').value = '';
                             alert('Your message has been sent (:');
