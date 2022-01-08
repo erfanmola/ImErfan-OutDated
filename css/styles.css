@@ -323,7 +323,7 @@ header #particles-js {
   border: 2px solid rgba(0, 0, 0, 0.1);
   text-align: center;
   border-radius: 5px;
-  font-family: 'Shabnam';
+  font-family: 'SanFrancisco', serif;
   font-size: 16px;
   -webkit-transition: all .15s;
   transition: all .15s;
@@ -358,7 +358,7 @@ header #particles-js {
   cursor: pointer;
   -webkit-transition: .15s all;
   transition: .15s all;
-  font-family: 'Shabnam';
+  font-family: 'SanFrancisco', serif;
   padding: 10px;
   font-size: 16px;
 }
