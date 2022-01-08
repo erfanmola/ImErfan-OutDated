@@ -6,11 +6,10 @@ $admin_id  = 111999636;
 
 if (isset($_POST['action'])) {
 
-    if (isset($_POST['name']) && isset($_POST['phone']) && isset($_POST['email']) && isset($_POST['text'])) {
+    if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['text'])) {
 
         $sender   = $_POST['name'];
         $email    = $_POST['email'];
-        $phone    = $_POST['phone'];
         $message  = $_POST['text'];
 
         $text  = "💌 New Message 💌";
@@ -19,8 +18,6 @@ if (isset($_POST['action'])) {
         $text .= "\n";
         $text .= "✉️ Email : $email";
         $text .= "\n";
-        $text .= "📞 Phone : $phone";
-        $text .= "\n\n";
         $text .= "📌 Message :";
         $text .= "\n";
         $text .= "$message";
