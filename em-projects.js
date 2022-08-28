@@ -12,6 +12,10 @@ let em_projects = [
         url: "https://filito.ir"
     },
     {
+        title: "کدیلو",
+        url: "https://codilo.ir"
+    },
+    {
         title: "جی‌کوئری لازم نیست !",
         url: "https://nojquery.ir"
     },
@@ -27,7 +31,11 @@ let em_projects = [
         title: "بهترین سایت دنیا",
         url: "https://theperfectsite.ir"
     },
-        {
+    {
+        title: "بهترین زبان برنامه‌نویسی",
+        url: "https://thebestlanguage.ir"
+    },
+    {
         title: "مجموعه دولوپیکس",
         url: "https://developix.ir"
     },
